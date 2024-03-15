@@ -1,0 +1,85 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: darkblue; /* Устанавливаем синий фон для всего документа */
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: blue;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h1 {
+    font-size: 32px;
+    color: yellow;
+}
+
+.section p {
+    color: yellow;
+    font-size: 16px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
+
+footer .footerP {
+    color: yellow;
+}
+
+footer .footerNAV {
+    color: yellow;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
