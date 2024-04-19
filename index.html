@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Метатеги для SEO -->
     <title>Guide genshin impact</title>
+    <meta name="description" content="Guide for beginners in Genshin Impact. Explore the open world, complete quests, fight bosses, and upgrade characters.">
+    <meta name="keywords" content="Genshin Impact, guide, beginners, exploration, quests, bosses, characters">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <meta name="yandex-verification" content="d5afc4f4d30fc200" />
     <!-- Yandex.Metrika counter -->
@@ -30,6 +34,7 @@
             <a href="#s2">Что не стоит делать</a>
             <a href="#s3">Интерактивная карта</a>
             <a href="#s4">Как пройти сюжетку</a>
+            <a href="#feedback">Связаться</a>
         </nav>
     </header>
     <main>
@@ -38,11 +43,11 @@
                 <h1>Добро пожаловать в гайд по Genshin Impact</h1>
                 <img src="genshin.jpg" alt="Описание изображения">
                 <p>Ето гайд для новичков в Genshin Impact.</p>
-                <p>Здесь вы узнаете что делать в этом открытом мире</p>
+                <p>Здесь ви узнаете что делать в етом откритом мире</p>
             </div>
             
         </section>
-        <section id="s1" class="section">
+        <section id="s2" class="section">
             <div class="text">
                 <h1>Что стоит делать</h1>
                 <p class="bold">1)Исследование мира:</p>
@@ -56,7 +61,7 @@
             </div>
             <img src="world.jpg" alt="Описание изображения">
         </section>
-        <section id="s2" class="section">
+        <section id="s3" class="section">
             <div class="text">
                 <h1>Что не стоит делать</h1>
                 <p class="bold">1)Тратить премиум-валюту на случайные предметы:</p>
@@ -68,7 +73,7 @@
             </div>
             <img src="art.jpg" alt="Описание изображения">
         </section>
-        <section id="s3" class="section">
+        <section id="s4" class="section">
             <div class="text">
                 <h1>Интерактивная карта</h1>
                 <p class="bold">для чего нужна интерактивная карта:</p>
@@ -76,7 +81,7 @@
             </div>
             <img src="map.jpg" alt="Описание изображения">
         </section>
-        <section id="s4" class="section">
+        <section id="s5" class="section">
             <div class="text">
                 <h1>Как пройти сюжетку</h1>
                 <p class="bold">Начало исследования:</p>
@@ -95,9 +100,37 @@
     </main>
     <footer>
         <div class="container">
-            <p class="footerP"></p>
-            <nav class="footerNAV"></nav>
+            <p class="footerP">Контактная информация: example@email.com | Телефон: +1234567890</p>
+            <nav class="footerNAV">
+                <!-- Кнопки социальных сетей -->
+                <a href="#" class="social-btn">Facebook</a>
+                <a href="#" class="social-btn">Twitter</a>
+                <a href="#" class="social-btn">Instagram</a>
+            </nav>
         </div>
     </footer>
+    <!-- Кнопка "Наверх" -->
+    <div class="scroll-to-top">
+        <a href="#header">Наверх</a>
+    </div>
+    <!-- Форма обратной связи -->
+    <div id="feedback" class="feedback-form">
+        <h2>Связаться с нами</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
 </body>
 </html>
