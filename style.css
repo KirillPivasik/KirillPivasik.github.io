@@ -7,12 +7,22 @@ body {
     background-color: darkblue; /* Устанавливаем синий фон для всего документа */
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 header {
     background-color: black;
     color: yellow;
     padding: 10px;
     text-align: center;
     height: 50px;
+    transition: background-color 0.3s;
 }
 
 nav {
@@ -24,62 +34,86 @@ nav a {
     text-decoration: none;
     margin-right: 20px;
     margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: black;
 }
 
 main {
     padding: 20px;
+    transition: background-color 0.3s;
+}
+
+main:hover + footer {
+    background-color: darkgreen;
 }
 
 .text {
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Больший отступ между секциями */
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-footer {
-    background-color: blue;
-    color: yellow;
-    padding: 10px;
-    text-align: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.section {
-    margin-bottom: 20px;
+.section:hover .text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section h1 {
     font-size: 32px;
     color: yellow;
+    transition: font-size 0.3s;
+}
+
+.section h1:hover {
+    font-size: 36px;
 }
 
 .section p {
     color: yellow;
     font-size: 16px;
-}
-
-.logo {
-    width: 100px;
-    height: 50px;
-    background-color: yellow;
-}
-
-footer .footerP {
-    color: yellow;
-}
-
-footer .footerNAV {
-    color: yellow;
-    text-align: center;
+    margin-bottom: 10px; /* Отступ между обычными параграфами */
+    transition: color 0.3s;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: max-width 0.5s;
+}
+
+.container:active {
+    max-width: 100%;
+}
+
+.section p.bold {
+    font-weight: bold;
+    margin-top: 20px; /* Отступ между жирным и обычным параграфами */
+}
+
+.section p:active {
+    max-height: 100px; /* Укажите достаточную высоту */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Отступ между изображениями и текстом */
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05); /* Примерное уменьшение */
+}
+
+.section {
+    margin-bottom: 60px; /* Увеличенный отступ между секциями */
 }
